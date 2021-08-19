@@ -43,13 +43,17 @@ https://pytorch.org/get-started/locally/
 If you want to know wich version of CUDA you have
 
 ```
-C:\Users\rusla>nvcc --version
+C:\Users\username\Clone-voice-with-Pytorch>nvcc --version
 ```
 
 in my case I will use CUDA 11, you can download [here](https://developer.download.nvidia.com/compute/cuda/11.4.1/local_installers/cuda_11.4.1_471.41_win10.exe) and install it, later in the terminal type
 
 ```
 conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge
+```
+
+```
+pip install -r requirements.txt 
 ```
 
 ```
