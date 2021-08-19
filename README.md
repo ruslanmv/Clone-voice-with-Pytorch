@@ -1,6 +1,30 @@
 # Cloning your Voice 
 
+Hello, today we are going toe clone your voice by using Python and Anaconda.
 
+First you need to create a directory where you will work , enter to your terminal
+
+```
+git clone https://github.com/ruslanmv/Clone-voice-with-Pytorch.git
+```
+
+Pretrained models come as an archive that contains **all three models** (speaker encoder, synthesizer, vocoder). The archive comes with the same directory structure as the repo, and you're expected to merge its contents with the root of the repository.
+
+
+
+Please ensure the files are extracted to these locations within your local copy of the repository:
+
+```
+curl https://github.com/blue-fish/Real-Time-Voice-Cloning/releases/download/v1.0/pretrained.zip -O -J -L
+```
+
+```
+tar -xf  pretrained.zip --directory ./Clone-voice-with-Pytorch
+```
+
+```
+cd Clone-voice-with-Pytorch
+```
 
 ```
 conda create --name clone python=3.7
@@ -22,29 +46,15 @@ If you want to know wich version of CUDA you have
 C:\Users\rusla>nvcc --version
 ```
 
-in my case I will use CUDA 11
+in my case I will use CUDA 11, you can download [here](https://developer.download.nvidia.com/compute/cuda/11.4.1/local_installers/cuda_11.4.1_471.41_win10.exe) and install it, later in the terminal type
 
 ```
 conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge
 ```
 
-
-
 ```
 pip install webrtcvad
 ```
-
-
-
-##  Download Pretrained Models
-
-Pretrained models come as an archive that contains **all three models** (speaker encoder, synthesizer, vocoder). The archive comes with the same directory structure as the repo, and you're expected to merge its contents with the root of the repository.
-
-### [[Download pretrained.zip\]](https://github.com/blue-fish/Real-Time-Voice-Cloning/releases/download/v1.0/pretrained.zip)
-
-Please ensure the files are extracted to these locations within your local copy of the repository:
-
-
 
 ## Install ffmpeg.
 
@@ -54,13 +64,11 @@ In windows you download the file
 
 [https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z](https://translate.google.com/website?sl=it&tl=en&ajax=1&elem=1&se=1&u=https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z) ". This will allow you to download the installation files of the latest version of FFmpeg for Windows to your computer. The files are stored in a compressed archive.
 
-
-
 **Extract the content from the file you just downloaded.** 
 
 - Select the **Extract here** option , then wait for the data decompression process to finish. A new folder will be created which will have the same name as the 7Z format file.
 
-![](../assets/images/posts/README/1a.jpg)
+
 
 copy the folder and  paste on your "Local Disk (C :)", 
 
@@ -125,19 +133,97 @@ python demo_cli.py
 
 If all tests pass, you're good to go.
 
+```
+python demo_toolbox.py
+```
+
+![](./assets/images/posts/README/2a.jpg)
+
+
+
+Then we click the **browse button** and select at least **5 seconds**  to 12 second of sound that you want to clone.
+
+For example from an interview of Donald Trump
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1108804639&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ruslan-kobizev" title="Ruslan Magana Vsevolodovna" target="_blank" style="color: #cccccc; text-decoration: none;">Ruslan Magana Vsevolodovna</a> · <a href="https://soundcloud.com/ruslan-kobizev/trump" title="Trump" target="_blank" style="color: #cccccc; text-decoration: none;">Trump</a></div>
+
+
+
+
+
+![](./assets/images/posts/README/3a.jpg)
+
+
+
+and you will obtain the spectrogram and embedding of Donald Trump
+
+
+
+![](./assets/images/posts/README/4a.jpg)
+
+and then click  **synthesize and vocode**
+
+
+
+![](./assets/images/posts/README/5a.jpg)
+
+
+
+The synthesizer expects to generate outputs that are somewhere between 5 and 12 seconds.
+
+To mark breaks, write a new line. Each line will be treated separately.
+
+Then, they are joined together to make the final spectrogram. Use the vocoder to generate audio.
+
+The vocoder generates almost in constant time, so it will be more time efficient for longer inputs like this one.
+
+On the left you have the embedding projections. Load or record more utterances to see them.
+
+If you have at least 2 or 3 utterances from a same speaker, a cluster should form.
+
+Synthesized utterances are of the same color as the speaker whose voice was used, but they're represented with a cross.
+
+You will obtain
+
+
+
+![](./assets/images/posts/README/6a.jpg)
+
+
+
+And you can change the text that you want to reproduce each time. You can export and save your cloned voice.
+
+
+
+<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1108806946&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ruslan-kobizev" title="Ruslan Magana Vsevolodovna" target="_blank" style="color: #cccccc; text-decoration: none;">Ruslan Magana Vsevolodovna</a> · <a href="https://soundcloud.com/ruslan-kobizev/trump-clone" title="trump-clone" target="_blank" style="color: #cccccc; text-decoration: none;">trump-clone</a></div>
+
+
+
+
+
+
+
 ### (Optional) Download Datasets
 
-For playing with the toolbox alone, I only recommend downloading [`LibriSpeech/train-clean-100`](https://www.openslr.org/resources/12/train-clean-100.tar.gz). Extract the contents as `<datasets_root>/LibriSpeech/train-clean-100` where `<datasets_root>` is a directory of your choosing. Other datasets are supported in the toolbox, see [here](https://github.com/CorentinJ/Real-Time-Voice-Cloning/wiki/Training#datasets). You're free not to download any dataset, but then you will need your own data as audio files or you will have to record it with the toolbox.
+For playing with the toolbox alone, I only recommend downloading [`LibriSpeech/train-clean-100`](https://www.openslr.org/resources/12/train-clean-100.tar.gz). 
 
-###  Launch the Toolbox
+Extract the contents as `<datasets_root>/LibriSpeech/train-clean-100` where `<datasets_root>` is a directory of your choosing. Other datasets are supported in the toolbox, see [here](https://github.com/CorentinJ/Real-Time-Voice-Cloning/wiki/Training#datasets). 
 
-You can then try the toolbox:
+You're free not to download any dataset, but then you will need your own data as audio files or you will have to record it with the toolbox. You can then try the toolbox:
 
 ```
 python demo_toolbox.py -d <datasets_root>`
-or
-`python demo_toolbox.py
 ```
 
 depending on whether you downloaded any datasets. 
+
+
+
+**Congratulations!** we have cloned the voice by using Pytorch.
+
+
+
+
+
+
 
