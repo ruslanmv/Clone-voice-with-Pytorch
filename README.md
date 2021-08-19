@@ -64,6 +64,10 @@ In windows you download the file
 
 [https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z](https://translate.google.com/website?sl=it&tl=en&ajax=1&elem=1&se=1&u=https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-full.7z) ". This will allow you to download the installation files of the latest version of FFmpeg for Windows to your computer. The files are stored in a compressed archive.
 
+![](./assets/images/posts/README/1a.jpg)
+
+
+
 **Extract the content from the file you just downloaded.** 
 
 - Select the **Extract here** option , then wait for the data decompression process to finish. A new folder will be created which will have the same name as the 7Z format file.
@@ -72,11 +76,11 @@ In windows you download the file
 
 copy the folder and  paste on your "Local Disk (C :)", 
 
-[![Immagine titolata Install FFmpeg on Windows Step 11](https://www.wikihow.com/images/thumb/2/27/Install-FFmpeg-on-Windows-Step-11-Version-2.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-11-Version-2.jpg.webp)](https://www-wikihow-it.translate.goog/Installare-FFmpeg-in-Windows?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-GB&_x_tr_pto=ajax,elem#/Immagine:Install-FFmpeg-on-Windows-Step-11-Version-2.jpg)
+[![Immagine titolata Install FFmpeg on Windows Step 11](https://www.wikihow.com/images/thumb/2/27/Install-FFmpeg-on-Windows-Step-11-Version-2.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-11-Version-2.jpg.webp)]()
 
 **Click on an empty spot in the right pane of the window with the right mouse button, then choose the \**Paste\** option from the context menu that will appear.** This way the folder you copied will be transferred from the directory where it is currently located to the root of your computer's hard drive.
 
-[![Immagine titolata Install FFmpeg on Windows Step 12](https://www.wikihow.com/images/thumb/0/0e/Install-FFmpeg-on-Windows-Step-12-Version-4.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-12-Version-4.jpg.webp)](https://www-wikihow-it.translate.goog/Installare-FFmpeg-in-Windows?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-GB&_x_tr_pto=ajax,elem#/Immagine:Install-FFmpeg-on-Windows-Step-12-Version-4.jpg)
+[![Immagine titolata Install FFmpeg on Windows Step 12](https://www.wikihow.com/images/thumb/0/0e/Install-FFmpeg-on-Windows-Step-12-Version-4.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-12-Version-4.jpg.webp)]()
 
 **Access the window from which you can manage Windows environment variables.** Follow these instructions:
 
@@ -84,13 +88,13 @@ copy the folder and  paste on your "Local Disk (C :)",
 - Click on the **Edit system-related environment variables** icon that appears in the list of results;
 - Click on the **Environment Variables** button displayed in the lower right corner of the window;
 
-[![Immagine titolata Install FFmpeg on Windows Step 13](https://www.wikihow.com/images/thumb/4/4f/Install-FFmpeg-on-Windows-Step-13-Version-4.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-13-Version-4.jpg.webp)](https://www-wikihow-it.translate.goog/Installare-FFmpeg-in-Windows?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-GB&_x_tr_pto=ajax,elem#/Immagine:Install-FFmpeg-on-Windows-Step-13-Version-4.jpg)
+[![Immagine titolata Install FFmpeg on Windows Step 13](https://www.wikihow.com/images/thumb/4/4f/Install-FFmpeg-on-Windows-Step-13-Version-4.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-13-Version-4.jpg.webp)]()
 
 **Select the variable Path listed in the "User Variables for [username]" section, then click the \**Edit\** button .** The list of paths currently assigned to the variable will be displayed.
 
 
 
-[![Immagine titolata Install FFmpeg on Windows Step 14](https://www.wikihow.com/images/thumb/e/ea/Install-FFmpeg-on-Windows-Step-14-Version-3.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-14-Version-3.jpg.webp)](https://www-wikihow-it.translate.goog/Installare-FFmpeg-in-Windows?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-GB&_x_tr_pto=ajax,elem#/Immagine:Install-FFmpeg-on-Windows-Step-14-Version-3.jpg)
+[![Immagine titolata Install FFmpeg on Windows Step 14](https://www.wikihow.com/images/thumb/e/ea/Install-FFmpeg-on-Windows-Step-14-Version-3.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-14-Version-3.jpg.webp)]()
 
 
 
@@ -100,7 +104,7 @@ copy the folder and  paste on your "Local Disk (C :)",
 - Enter the path C:\ffmpeg\bin. If you have pasted the "FFmpeg" folder into a different memory drive or folder, you will need to replace the path indicated with the specific one in your case (remember to add the string "\ bin" at the end);
 - Click on the **OK** button . At this point, the complete path of the "FFmpeg" folder will be present as the last value of the "Path" variable.
 
-[![Immagine titolata Install FFmpeg on Windows Step 15](https://www.wikihow.com/images/thumb/f/f5/Install-FFmpeg-on-Windows-Step-15-Version-3.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-15-Version-3.jpg.webp)](https://www-wikihow-it.translate.goog/Installare-FFmpeg-in-Windows?_x_tr_sl=it&_x_tr_tl=en&_x_tr_hl=en-GB&_x_tr_pto=ajax,elem#/Immagine:Install-FFmpeg-on-Windows-Step-15-Version-3.jpg)
+[![Immagine titolata Install FFmpeg on Windows Step 15](https://www.wikihow.com/images/thumb/f/f5/Install-FFmpeg-on-Windows-Step-15-Version-3.jpg/v4-728px-Install-FFmpeg-on-Windows-Step-15-Version-3.jpg.webp)]()
 
 **Click on the \**OK\** button to save the changes.**
 
@@ -196,10 +200,6 @@ And you can change the text that you want to reproduce each time. You can export
 
 
 <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1108806946&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ruslan-kobizev" title="Ruslan Magana Vsevolodovna" target="_blank" style="color: #cccccc; text-decoration: none;">Ruslan Magana Vsevolodovna</a> · <a href="https://soundcloud.com/ruslan-kobizev/trump-clone" title="trump-clone" target="_blank" style="color: #cccccc; text-decoration: none;">trump-clone</a></div>
-
-
-
-
 
 
 
