@@ -151,13 +151,7 @@ python demo_toolbox.py
 
 Then we click the **browse button** and select at least **5 seconds**  to 12 second of sound that you want to clone.
 
-For example from an interview of Donald Trump
-
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1108804639&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ruslan-kobizev" title="Ruslan Magana Vsevolodovna" target="_blank" style="color: #cccccc; text-decoration: none;">Ruslan Magana Vsevolodovna</a> · <a href="https://soundcloud.com/ruslan-kobizev/trump" title="Trump" target="_blank" style="color: #cccccc; text-decoration: none;">Trump</a></div>
-
-
-
-
+For example from an interview of Donald Trump you can listen [here](https://soundcloud.com/ruslanmv/trump) 
 
 ![](./assets/images/posts/README/3a.jpg)
 
@@ -199,11 +193,11 @@ You will obtain
 
 
 
-And you can change the text that you want to reproduce each time. You can export and save your cloned voice.
+And you can change the text that you want to reproduce each time. You can export and save your cloned voice , [here](https://soundcloud.com/ruslanmv/trump-clone)
 
 
 
-<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1108806946&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/ruslan-kobizev" title="Ruslan Magana Vsevolodovna" target="_blank" style="color: #cccccc; text-decoration: none;">Ruslan Magana Vsevolodovna</a> · <a href="https://soundcloud.com/ruslan-kobizev/trump-clone" title="trump-clone" target="_blank" style="color: #cccccc; text-decoration: none;">trump-clone</a></div>
+
 
 
 
