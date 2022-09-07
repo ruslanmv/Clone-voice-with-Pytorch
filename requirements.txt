@@ -1,4 +1,6 @@
-torch
+torchaudio
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==1.12.1+cu116
 umap-learn
 visdom
 librosa>=0.8.0
