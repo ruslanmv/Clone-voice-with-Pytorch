@@ -10,18 +10,6 @@ git clone https://github.com/ruslanmv/Clone-voice-with-Pytorch.git
 
 Pretrained models come as an archive that contains **all three models** (speaker encoder, synthesizer, vocoder). The archive comes with the same directory structure as the repo, and you're expected to merge its contents with the root of the repository.
 
-
-
-Please ensure the files are extracted to these locations within your local copy of the repository:
-
-```
-curl https://github.com/blue-fish/Real-Time-Voice-Cloning/releases/download/v1.0/pretrained.zip -O -J -L
-```
-
-```
-tar -xf  pretrained.zip --directory ./Clone-voice-with-Pytorch
-```
-
 ```
 cd Clone-voice-with-Pytorch
 ```
@@ -194,10 +182,6 @@ You will obtain
 
 
 And you can change the text that you want to reproduce each time. You can export and save your cloned voice , [here](https://soundcloud.com/ruslanmv/trump-clone)
-
-
-
-
 
 
 
