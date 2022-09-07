@@ -4,6 +4,7 @@ from utils.argutils import print_args
 from utils.modelutils import check_model_paths
 import argparse
 import os
+from utils.default_models import ensure_default_models
 
 
 if __name__ == '__main__':
@@ -35,9 +36,9 @@ if __name__ == '__main__':
         os.environ["CUDA_VISIBLE_DEVICES"] = ""
     del args.cpu
 
-    ## Remind the user to download pretrained models if needed
-    check_model_paths(encoder_path=args.enc_models_dir, synthesizer_path=args.syn_models_dir,
-                      vocoder_path=args.voc_models_dir)
+    # Remind the user to download pretrained models if needed
+    ensure_default_models(args.models_dir)
+
 
     # Launch the toolbox
     Toolbox(**vars(args))    

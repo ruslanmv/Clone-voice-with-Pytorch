@@ -13,6 +13,7 @@ import torch
 import sys
 import os
 from audioread.exceptions import NoBackendError
+from utils.default_models import ensure_default_models
 
 if __name__ == '__main__':
     ## Info & args
@@ -70,16 +71,15 @@ if __name__ == '__main__':
     else:
         print("Using CPU for inference.\n")
     
-    ## Remind the user to download pretrained models if needed
-    check_model_paths(encoder_path=args.enc_model_fpath,
-                      synthesizer_path=args.syn_model_fpath,
-                      vocoder_path=args.voc_model_fpath)
-    
+
     ## Load the models one by one.
     print("Preparing the encoder, the synthesizer and the vocoder...")
+    ensure_default_models(Path("saved_models"))
     encoder.load_model(args.enc_model_fpath)
     synthesizer = Synthesizer(args.syn_model_fpath)
     vocoder.load_model(args.voc_model_fpath)
+
+
     
     
     ## Run a test
